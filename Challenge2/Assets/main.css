@@ -1,0 +1,139 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: "inherit";
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+html {
+}
+body {
+	line-height: 1;
+    padding: 50px;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*CSS*/
+* {
+    font-family: 'Lora', serif;
+    line-height: 1.2em;
+}
+*::selection {
+    color: #008080;
+}
+h1 {
+    font-size: 36px;
+    padding-bottom: 20px;
+}
+h2 {
+    font-size: 28px;
+}
+h3 {
+    padding-top: 18px;
+    padding-bottom: 10px;
+    font-size: 24px;
+}
+h4 {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 18px;
+}
+ul,p {
+    font-size: 18px;
+}
+.container {
+    position: relative;
+    display: flex;
+    margin-left: -25px;
+    margin-right: -25px;}
+.col-sm-3 {
+    position: relative;
+}
+.col-sm-6 {
+
+}
+#prep {
+    max-width: 66vw;
+}
+img {
+    position: relative;
+    width: 300px;
+}
+#intro {
+    margin-left: 25px;
+    max-width: 45vw;
+}
+#ingredients {
+    position: -webkit-sticky;
+    position: -moz-sticky;
+    position: -ms-sticky;
+    position: -o-sticky;
+    position: sticky;
+    top: 150px;
+    margin-left: 25px;
+    max-width: 45vw;
+}
+#bread-pic {
+    margin-right: 25px;
+}
+@media only screen and (max-width: 786px) {
+    h1 {
+        padding-top: 20px;
+    }
+    .container {
+        position: relative;
+        display: block;
+    }
+    #intro {
+        margin-left: 0px;
+    }
+    #ingredients {
+        position: relative;
+        top: auto;
+        margin-left: 25px;
+        max-width: 45vw;
+    }
+    #bread-pic {
+        margin-right: 0px;
+    }
+    #prep {
+        max-width: 100vw;
+    }
+}
+
