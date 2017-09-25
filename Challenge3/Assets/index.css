@@ -1,0 +1,149 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+    line-height: 1.25em;
+	font-family: sans-serif;
+	vertical-align: baseline;
+}
+/*CSS STYLING*/
+
+body {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    font-family: Helvetica, sans-serif;
+    vertical-align: baseline;
+}
+h1 {
+    color: #fff;
+    font-size: 10em;
+    text-align: center;
+    height: 200px;
+}
+h2 {
+    color: #000;
+    font-size: 5em;
+    text-align: center;
+    opacity: .75;
+    color: #ffe700;
+    line-height: 1em;
+}
+.reg {
+    font-size: 3em;
+    font-weight:400;
+    color: #000;
+    padding-bottom: 15.5px;
+}
+.italic {
+    font-size: 2em;
+    font-weight:400;
+    font-style: italic;
+    color: #fff;
+    padding-bottom: 15.5px;
+}
+p {
+    padding-bottom: 15.5px;
+}
+#a {
+}
+#b {
+    display: none;
+}
+.col:hover #a{
+    display: none;
+}
+.col:hover #b{
+    display:inherit;
+}
+.row {
+    position: relative;
+    display: flex;
+    height: 33.33vh;
+}
+.col {
+    width: 33.33vw;
+}
+.white {
+    background-color: #fff;
+}
+.white h1 {
+    color:  #000;
+}
+.container {
+    position: relative;
+    z-index: 1;
+}
+.splash {
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    border-top: #ffe700 40px solid;
+}
+.second {
+    color: #fff;
+    background-color: #000;
+    display: flex;
+    border-top: #ffe700 40px solid;
+    z-index: 1;
+}
+.second-col {
+    background-color: #fff;
+    padding: 50px;
+    max-width: calc(66.66vw - 100px);
+    
+}
+.second-col p {
+    color: #000;
+    font-style:italic;
+
+}
+.second-col2 {
+    padding: 50px;
+    max-width: calc(33.33vw - 100px);
+}
+.third {
+    position: fixed;
+    top: 0;
+    width: 40px;
+    z-index: 100;
+    padding: 5px;
+}
+.bold {
+    font-weight: bold;
+}
+@media only screen and (max-width: 786px) {
+    .second {
+    display: block;
+}
+   .second-col {
+    background-color: #fff;
+    padding: 50px;
+    max-width: 100vw;
+    display: block !important;
+    } 
+    .second-col2 {
+    display: block !important;
+    max-width: 100vw;
+    }
+    h2 {
+        font-size: 3em;
+    }
+}
