@@ -5,20 +5,25 @@ h3 {
     font-size: 36px;
 }
 h4 {
-    font-size: 32px;
+    font-size: 18px;
 }
 p {
     display: block;
     line-height: 1.25;
     background-color: #5db85d;
-    padding: 10px;
+    padding: 30px;
 }
 body {
-    padding: 20px;
+    font-family: sans-serif;
+    padding: 15px;
 }
 .container {
+    display: flex;
+}
+.col {
     z-index: 100;
     max-width: 40vw;
+    padding: 15px;
 }
 .bike-cat-div {
     z-index: 0;
@@ -66,6 +71,11 @@ body {
     height: auto;
     -webkit-animation: slide-vert 3s alternate-reverse infinite;
     animation: slide-vert 3s alternate-reverse infinite;
+    -webkit-animation-delay: 1.5s;
+    animation-delay: 1.5s;
+}
+.row {
+    display: flex;
 }
 #one {
     -webkit-animation-delay: 0.5s;
@@ -80,13 +90,57 @@ body {
 -webkit-animation-delay: 0.5s;
     animation-delay: 0.5s;
 }
+.fixed {
+    position: fixed;
+}
+#vletter1, #vletter2, #vletter3, #vletter4 {
+    position: relative;
+    font-size: 48px;
+    font-weight: 600;
+    margin: 30px;
+    -webkit-animation: slide-vert 3s alternate-reverse infinite;
+    animation: slide-vert 3s alternate-reverse infinite;
+}
+#vletter2 {
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+}
+#vletter3 {
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+}
+#vletter4 {
+    -webkit-animation-delay: 3s;
+    animation-delay: 3s;
+}
+#hletter1, #hletter2, #hletter3, #hletter4, #hletter5 {
+    position: relative;
+    display: block;
+    font-size: 48px;
+    font-weight: 600;
+    margin: 30px;
+    -webkit-animation: slide-horiz 3s alternate-reverse infinite;
+    animation: slide-horiz 3s alternate-reverse infinite;
+}
+#hletter2 {
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+}
+#hletter3 {
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+#hletter4 {
+    -webkit-animation-delay: 3s;
+    animation-delay: 3s;
+}
 
 @-webkit-keyframes slide-horiz{
     0% {
         transform: translateX(0);
     }
     100% {
-        transform: translateX(85vw);
+        transform: translateX(40vw);
     }
 }
 @-webkit-keyframes slide-vert{
@@ -97,6 +151,8 @@ body {
         transform: translateY(85vh);
     }
 }
+
+/*media query*/
 @media only screen and (max-width: 767px) {
     h1 {
         font-size: 36px;
@@ -106,9 +162,24 @@ body {
         font-size: 24px;
     }
     h4 {
-        font-size: 22px;
+        font-size: 16px;
     }
     .container {
+        display: block;
+    }
+    .col {
         max-width: 100vw;
     }
+    .letters {
+        display: none;
+    }
+
+    @-webkit-keyframes slide-horiz{
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(85vw);
+    }
+}
 }
