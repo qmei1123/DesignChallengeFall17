@@ -1,0 +1,114 @@
+h1 {
+    font-size: 48px;
+}
+h3 {
+    font-size: 36px;
+}
+h4 {
+    font-size: 32px;
+}
+p {
+    display: block;
+    line-height: 1.25;
+    background-color: #5db85d;
+    padding: 10px;
+}
+body {
+    padding: 20px;
+}
+.container {
+    z-index: 100;
+    max-width: 40vw;
+}
+.bike-cat-div {
+    z-index: 0;
+    display: block;
+    background-color: #fff;
+    height: 30px;  
+}
+.bike-cat-div2 {
+    z-index: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: block;
+    background-color: #fff;
+    height: 100vh; 
+    width: 30px;
+}
+.bike-cat-div3 {
+    z-index: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: block;
+    background-color: #fff;
+    height: 100vh; 
+    width: 30px;
+}
+.bike-cat-1 {
+    position: absolute;
+    width: 30px;
+    height: auto;
+    -webkit-animation: slide-horiz 3s alternate-reverse infinite;
+    animation: slide-horiz 3s alternate-reverse infinite;
+}
+.bike-cat-2 {
+    position: absolute;
+    width: 30px;
+    height: auto;
+    -webkit-animation: slide-vert 3s alternate-reverse infinite;
+    animation: slide-vert 3s alternate-reverse infinite;
+}
+.bike-cat-3 {
+    position: absolute;
+    width: 30px;
+    height: auto;
+    -webkit-animation: slide-vert 3s alternate-reverse infinite;
+    animation: slide-vert 3s alternate-reverse infinite;
+}
+#one {
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+}
+
+#two {
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+#three {
+-webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+}
+
+@-webkit-keyframes slide-horiz{
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(85vw);
+    }
+}
+@-webkit-keyframes slide-vert{
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(85vh);
+    }
+}
+@media only screen and (max-width: 767px) {
+    h1 {
+        font-size: 36px;
+    }
+    
+    h3 {
+        font-size: 24px;
+    }
+    h4 {
+        font-size: 22px;
+    }
+    .container {
+        max-width: 100vw;
+    }
+}
