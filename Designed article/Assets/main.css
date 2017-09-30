@@ -1,20 +1,26 @@
 h1 {
     font-size: 48px;
+    color: #6897BB;
 }
 h3 {
     font-size: 36px;
+    color: #6897BB;
 }
 h4 {
     font-size: 18px;
+    color: #6897BB;
+    font-weight: 400;
 }
 p {
     display: block;
     line-height: 1.25;
-    background-color: #5db85d;
+    background-color: #94A829;
     padding: 30px;
+    border: 3px #6897BB solid;
+    border-radius: 5px;
 }
 body {
-    font-family: sans-serif;
+    font-family: 'Muli', sans-serif;
     padding: 15px;
 }
 .container {
@@ -92,14 +98,16 @@ body {
 }
 .fixed {
     position: fixed;
+    color: #6897BB;
+    opacity: .5;
 }
 #vletter1, #vletter2, #vletter3, #vletter4 {
     position: relative;
     font-size: 48px;
     font-weight: 600;
     margin: 30px;
-    -webkit-animation: slide-vert 3s alternate-reverse infinite;
-    animation: slide-vert 3s alternate-reverse infinite;
+    -webkit-animation: slide-vert 4s alternate-reverse infinite;
+    animation: slide-vert 4s alternate-reverse infinite;
 }
 #vletter2 {
     -webkit-animation-delay: 0.5s;
