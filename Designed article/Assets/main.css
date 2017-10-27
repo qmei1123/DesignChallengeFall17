@@ -16,6 +16,17 @@ h4 {
     font-weight: 400;
 }
 p {
+    font-size: 16px;
+    line-height: 1.25;
+    
+}
+.map {
+    width: 40vw;
+}
+.ko {
+    height: 300px;
+}
+.p {
     display: block;
     font-size: 16px;
     line-height: 1.25;
@@ -23,14 +34,42 @@ p {
     padding: 30px;
     border: 3px #6897BB solid;
     border-radius: 5px;
+    width: 100%;
+}
+.empty {
+    position: relative;
+    display: block;
+    background-color: #d2d2d2;
+    width: 40vw;
+    height: 300px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.heading {
+    z-index: 100;
+    max-width: 60vw;
+    padding: 15px;
 }
 .container {
     display: flex;
 }
-.col {
+.col-left {
+    display: inline-block;
     z-index: 100;
     max-width: 40vw;
     padding: 15px;
+    float: left;   
+    clear: right;
+    margin-right: 35px;
+}
+.col-right {
+    display: inline-block;
+    z-index: 100;
+    max-width: 40vw;
+    padding: 15px;
+    float: right;
+    clear: left;
+    margin-left: 35px;
 }
 .bike-cat-div {
     z-index: 0;
@@ -176,12 +215,27 @@ p {
     .container {
         display: block;
     }
-    .col {
-        max-width: 100vw;
+    .p {
+        width: 100%;
     }
-    .letters {
+    .col-right {
         display: none;
     }
+    .col-left {
+    display: inline-block;
+    z-index: 100;
+    max-width: calc(100% - 90px);
+    padding: 15px;
+}
+.col-right {
+    display: none;
+    z-index: 100;
+    max-width: 40vw;
+    padding: 15px;
+    float: right;
+    clear: left;
+    margin-left: 40px;
+}
 
     @-webkit-keyframes slide-horiz{
     0% {
